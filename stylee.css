@@ -1,0 +1,110 @@
+body {
+    min-height: 2000px;
+    
+}
+
+#btn-nav {
+    margin-left: 15px;
+}
+
+#btn-nav:hover {
+    background-color: #5c5656;
+    color: #fff;
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #5c5656;
+    margin: auto;
+    scale: 0;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.nav-link:hover::after {
+    scale: 1;
+    opacity: 1;
+}
+
+#jumbotron {
+    padding-top: 20px;
+}
+
+.container-card {
+    max-width: max-content;
+}
+
+.title-hero {
+    letter-spacing: 4px;
+} 
+
+.title-hero::before {
+    content: "";
+    display: block;
+    margin: 0 10px;
+    width: 50px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #8a8686;
+}
+
+.image-portfolio {
+    transition: .5s ease;
+}
+
+.image-portfolio:hover {
+    scale: 1.1;
+}
+
+.btn-click {
+    background-color: rgb(124, 111, 209);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+#btn-skill {
+    text-decoration: none;
+    padding: 7px 40px;
+}
+
+textarea {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.socials-media a i {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #000;
+}
+
+/* breakpoints */
+@media screen and (max-width: 768px) {
+    #btn-nav {
+        margin-left: 0;
+    }
+
+    .content-contact {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .content-contact .content {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content-contact {
+        display: block;
+    }
+}
